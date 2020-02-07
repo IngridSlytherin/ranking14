@@ -1,0 +1,249 @@
+body, html {
+  background-color: #F2F2F2;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/*---------- CONTAINER ---------- */
+#container {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  border: 1px solid #ccc;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*background-image: url("medieval.gif");
+  background-size: cover;*/
+}
+
+@media screen and (orientation: landscape) {
+  #container {
+    
+    height: 100%;
+  }
+  }
+
+/* Desktop Styles */
+@media (min-width: 961px){
+  #container{
+    /*visibility: hidden;*/
+    justify-content: center;
+  }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 425px) {
+  #container {
+    /*visibility: hidden;*/
+    justify-content: center;
+  }
+}
+/* ---------- FIM CONTAINER ----------*/
+
+/*---------- AVATAR ----------*/
+.box {
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .box {
+    align-items: flex-end;
+  }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  #container {
+    align-items: flex-end;
+  }
+}
+
+/* Tablet Styles */
+
+
+.box>*:nth-child(1) {
+  justify-content: flex-end;
+  align-self: center;
+  width: 60px;
+  height: 60px;
+  margin-top: 250px;
+  margin-left: 5px;
+  border-radius: 90px;
+  background-color: yellow;
+  animation:3s ease 0s normal forwards 1 fadein;
+  background-image: url("rachel.jpg");
+  background-size: cover;
+    /*align-items: flex-end; bottom to top
+  justify-content: flex-end;*/
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .box>*:nth-child(1) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    margin-top: 610px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .box>*:nth-child(1) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    /*margin-top: 320px;*/
+  }
+}
+/* Tablet Styles */
+
+.box>*:nth-child(2) {
+  justify-content: flex-end;
+  align-self: center;
+  margin-left: 15px;
+  margin-top: 180px;
+  width: 70px;
+  height: 70px;
+  border-radius: 90px;
+  background-color: white;
+  animation:3s ease 0s normal forwards 1 fadein;
+  background-image: url("rachel.jpg");
+  background-size: cover;
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .box>*:nth-child(2) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    margin-top: 550px;
+  }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .box>*:nth-child(2) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    /*margin-top: 250px;*/
+  }
+}
+/* Tablet Styles */
+
+
+.box *:nth-child(3) {
+  justify-content: flex-end;
+  align-self: center;
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+  margin-top: 290px;
+  border-radius: 90px;
+  background-color: red;
+  animation:3s ease 0s normal forwards 1 fadein;
+  background-image: url("rachel.jpg");
+  background-size: cover;
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .box>*:nth-child(3) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    margin-top: 670px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .box>*:nth-child(3) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    /*margin-top: 355px;*/
+  }
+}
+
+/* Tablet Styles */
+
+
+
+/*---------- FIM AVATAR ---------- */
+
+/*---------- PODIO ---------- */
+
+.podio {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end; /*bottom to top*/
+  justify-content: flex-end; 
+}
+
+@media screen and (orientation: landscape) {
+  .podio {
+    display: flex;
+    
+  }
+  }
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .podio {
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .podio {
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+}
+/* Tablet Styles */
+
+
+/*---------- FIM PODIO ---------- */
+
+/*---------- ANIMAÇÃO ---------- */ 
+.podio img { animation: animacao 5s ease forwards alternate; 
+}
+
+@keyframes animacao {
+   from { 
+    height: 5px;
+  }
+   to { 
+    height: 250px;
+  }
+}
+/*---------- FIM PODIO ----------*/
+
+
+.box { animation: animacao 5s ease forwards;
+}
+
+
+@keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+    {
+      size: 30px;
+    }
+
+/*---------- FIM ANIMAÇÃO ----------*/
