@@ -1,44 +1,49 @@
+
 <!DOCTYPE html>
-<html>
+<!-- <html> sempre colocar o idioma -->
+<html lang="pt-br">
+    
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css"media="screen">
-	<meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1.0'">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title></title>
 
-	<title></title>
+
 </head>
+
 <body>
-	<!-- QUADRO -->
-<div id="container">
+    <div id="container">
+    
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <div class="podio">
+            <img src="podium.svg">
+        </div>
 
-<!-- Avatar -->      
-<div class="box">
-  	<div></div>
-  	<div></div>
-  	<div></div>
-</div>
-	
-<!-- Podio -->
-<div class="podio">
-	<img src="podium.svg">
-	</div>
-</div>
+    </div>
 
-<script>
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-    document.body.style.backgroundColor = "yellow";
-  } else {
-    document.body.style.backgroundColor = "pink";
-  }
-}
+    <!-- </div> tem uma div fechando a mais -->
+    <!--
+    <script>
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+        document.body.style.backgroundColor = "yellow";
+        } 
+        else {
+        document.body.style.backgroundColor = "pink";
+        }
+    }
 
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
-</script>
-
-
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+-->
 
 </body>
 </html>
